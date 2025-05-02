@@ -18,9 +18,7 @@ public class Rocket implements DragEquation{
 
         switch(variableType){
             case "velocity":
-
-                if(airDensity != 0){}
-                velocity = (float) Math.sqrt((2.0f*weight)/dragCoefficient*airDensity*area);
+                velocity = (float) Math.sqrt((2.0f*weight)/(dragCoefficient*airDensity*area));
                 return velocity;
             case "airDensity":
                 return airDensity;
